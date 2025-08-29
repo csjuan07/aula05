@@ -112,15 +112,22 @@
   const texto = "Clique Aqui";
   botaoFilho.textcontent = texto;
 
-   /*ex6
-   let avoBotao = paiBotao.parentElement;
-   let adotar = terceiraSection.appendChild(avoBotao);
-   log(adotar);
-   */
-   //oq eu acho que vc quis dizer =>
-   let avoBotao = paiBotao.parentElement;
-   let adotar = terceiraSection.appendChild(avoBotao);
+   //ex6
+   let botaoOrigem = document.querySelectorAll("button")[1];
+   let paiOrigem = botaoOrigem.parentElement;
+   let avoOrigem = paiOrigem.parentElement;
+   let adotar = terceiraSection.appendChild(avoOrigem);
    log(terceiraSection);
+
+   //ex7
+   let irmaPrimeiraSection = primeiraSection.nextElementSibling.nextElementSibling;
+   let criarP = document.createElement('p');
+   const paragrafo = "Cheguei do primeiro irmão!";
+   criarP.textcontent = paragrafo;
+
+   //ex8
+   
+   
  </script>
 </body>
 </html>
