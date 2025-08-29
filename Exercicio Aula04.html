@@ -85,8 +85,8 @@
  <script> 
   //ex1
   let botao = document.querySelector("button");
-  let botaoPai = botao.parentElement;
-  console.log(botao,botaoPai);
+  let paiBotao = botao.parentElement;
+  console.log(botao,paiBotao);
 
   //ex2
   let primeiraSection = document.querySelector("section");
@@ -109,8 +109,19 @@
   let primeiraFilhos = primeiraSection.children[0];
   let sectionFilho = primeiraFilhos.children[0];
   let botaoFilho = sectionFilho.children[0];
-  let novoTexto = "Clique Aqui";
-  botaoFilho.textcontent = novoTexto;
+  botaoFilho.textcontent = "Clique Aqui";
+
+   /*ex6
+   let avoBotao = paiBotao.parentElement;
+   let adotar = terceiraSection.appendChild(avoBotao);
+   log(adotar);
+   */
+   //oq eu acho que vc quis dizer =>
+   let botaoOrigem = document.querySelector("button")[1];
+   let paiOrigem = botaoOrigem.parentElement;
+   let avoOrigem = paiOrigem.parentElement;
+   adotar = terceiraSection.appendChild(avoOrigem);
+   log(adotar);
  </script>
 </body>
 </html>
