@@ -109,7 +109,8 @@
   let primeiraFilhos = primeiraSection.children[1];
   let sectionFilho = primeiraFilhos.children[0];
   let botaoFilho = sectionFilho.children[0];
-  botaoFilho.textcontent = "Clique Aqui";
+  const texto = "Clique Aqui";
+  botaoFilho.textcontent = texto;
 
    /*ex6
    let avoBotao = paiBotao.parentElement;
@@ -117,7 +118,7 @@
    log(adotar);
    */
    //oq eu acho que vc quis dizer =>
-   let botaoOrigem = document.querySelectorAll("button")[1];
+   let botaoOrigem = document.querySelectorAll("button")[0];
    let paiOrigem = botaoOrigem.parentElement;
    let avoOrigem = paiOrigem.parentElement;
    adotar = terceiraSection.appendChild(avoOrigem);
